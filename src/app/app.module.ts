@@ -11,7 +11,7 @@ import { TeacherComponent } from './components/teacher/teacher.component';
   declarations: [
     AppComponent,
     TeacherComponent,
-    AboutComponent
+    //AboutComponent
   ],
   imports: [
     BrowserModule
