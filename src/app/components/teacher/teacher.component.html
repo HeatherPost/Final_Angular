@@ -1,0 +1,24 @@
+<p>
+    teacher-list works! ILKER
+</p>
+
+<div>
+    <h3>teacher</h3>
+    <div *ngFor="let teacher of teachers">
+        <ul>
+            <li>Name: {{teacher.name}}</li>
+            <li>Lastname: {{teacher.lastname}}</li>
+        </ul>
+    </div>
+</div>
+
+<!-- NOTE ilker this block is not needed for final project, just to show using a service returning an Array -->
+<div>
+    <h3>teacher2s</h3>
+    <div *ngFor="let teacher2 of teacher2s">
+        <ul>
+            <li>Name: {{teacher2.name}}</li>
+            <li>Lastname: {{teacher2.lastname}}</li>
+        </ul>
+    </div>
+</div>
