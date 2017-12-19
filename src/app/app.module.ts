@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { TeacherComponent } from './components/teacher/teacher.component';
-import { AboutComponent } from './components/about/about.component';
+//import { AboutComponent } from './components/about/about.component';
 
 
 @NgModule({
