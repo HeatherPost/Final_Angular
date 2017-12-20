@@ -15,9 +15,9 @@ export class teacherComponent implements OnInit {
   constructor(private TeacherListDataService:TeacherListDataService) { }
 
   ngOnInit() {
-    this.TeacherListDataService.getTeachers().subscribe (teachers) =>{
+    this.TeacherListDataService.getTeachers().subscribe ((teachers) =>{
       this.teachers = teachers;
-    }
+    });
   }
 
 }
