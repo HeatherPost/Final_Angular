@@ -1,21 +1,21 @@
 <h1>
-    Teachers worked!
+    Teachers Worked!
 </h1>
+<div>
+    <button (click)="toggleToDisplay">Toggle Button</button>
+</div>
 
-<body>
-    <button(click)="toggleToDisplay()">Click to Toggle</button>
-        <div *ngif="isToDisplay">
-            <p>Teachers:</p>
-            <div *ngFor="let teacher of teachers">
-                <ul>
-                    <li>teacherId: {{teacher.teacherId}}</li>
-                    <li>name: {{teacher.name}}</li>
-                    <li>lastname: {{teacher.lastname}}</li>
-                    <li>title: {{teacher.title}}</li>
-                    <li>age: {{teacher.age}}</li>
-                    <li>isFullTime: {{teacher.isFullTime}}</li>
-                    <li>updateOn: {{teacher.updateOn}}</li>
-                </ul>
-            </div>
-        </div>
-</body>
+<div *ngIf="isToDisplayTeachers">
+    <div *ngFor="let teacher of teachers">
+        <p>Teachers: </p>
+        <ul>
+            <li>teacherId: {{teacher.teacherId</li>
+            <li>name: {{teacher.name}}</li>
+            <li>lastname: {{teacher.lastname}}</li>
+            <li>lastname: {{teacher.lastname}}</li>
+            <li>age: {{teacher.age}}</li>
+            <li>isFullTime: {{teacher.isFullTime}}</li>
+            <!-- > <li>updateOn: {{teacher.updateOn}}</li> -->
+        </ul>
+    </div>
+</div>
