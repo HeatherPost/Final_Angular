@@ -11,7 +11,6 @@ import 'rxjs/add/operator/map'; // NOTE ilker importing react JS extension opera
 
 @Injectable()
 export class TeacherListDataService {
-teacher2s: Teacher2[];
 
   constructor(public http:Http) { 
     console.log("TeacherListDataService constructor executing");
@@ -27,11 +26,6 @@ teacher2s: Teacher2[];
       .map( response => response.json()); // NOTE rxjs map operator allows us to hook up a transformer to observable returned by above GET
   }
 
-  // NOTE ilker providing to show service returning an Array. Not needed for final project
-  getTeacher2s() {
-    // NOTE ilker below returns an Prof2[]
-    return this.teacher2s;
-  }
 
   // NOTE ilker below block is not needed for final project
   // getProf2sC() {
@@ -47,12 +41,13 @@ teacher2s: Teacher2[];
 
 //NOTE ilker using 'export' below allows any component using this service to be able to import the below interface
 export interface Teacher {
+  teacherId: string,
   name:string,
-  lastname:string
+  lastname: string,
+  title: string,
+  age: number,
+  isFullTime: boolean,
+  updatedOn: Date  
 }
 
-// NOTE ilker no need for below one, just to show service returning an Array. No need in final project
-export interface Teacher2 {
-  name:string,
-  lastname:string
-}
+
