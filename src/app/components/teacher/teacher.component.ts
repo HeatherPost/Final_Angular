@@ -7,7 +7,7 @@ import { Teacher} from '../../services/teacher-data.service';
   templateUrl: './teacher.component.html',
   styleUrls: ['./teacher.component.css']
 })
-export class TeacherComponent implements OnInit {
+export class teacherComponent implements OnInit {
 
   teachers:Teacher[];
   isToDisplayTeachers: boolean = false;
