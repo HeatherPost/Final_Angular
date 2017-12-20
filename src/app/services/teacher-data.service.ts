@@ -14,10 +14,7 @@ export class TeacherListDataService {
 
   constructor(public http:Http) { 
     console.log("TeacherListDataService constructor executing");
-    this.teacher2s = [
-      {name:'ilker', lastname:'kiris'},
-      {name:'neelu', lastname:'sinha'}
-    ];
+
   }
 
   getTeachers() {
