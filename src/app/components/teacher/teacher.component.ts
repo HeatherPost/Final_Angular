@@ -20,4 +20,8 @@ export class teacherComponent implements OnInit {
     });
   }
 
+  toggleToDisplay(){
+    this.isToDisplayTeachers = this.isToDisplayTeachers;
+  }
+
 }
